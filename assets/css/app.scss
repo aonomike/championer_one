@@ -1,8 +1,9 @@
-/* This file is for your main application css. */
-$fa-font-path: "../fonts";
+@import "~materialize-css/sass/materialize";
+@import "background-video";
+@import "terms_of_use";
+@import "navbar";
+@import "footer";
 
-@import "font-awesome";
-@import "materialize";
 
 .container {
   width: 75%;

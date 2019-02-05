@@ -16,4 +16,11 @@ defmodule ChampionerOneWeb.LayoutView do
   def linkify_atom(page, conn) do
     page |> to_string |> String.capitalize |> link(to: page_path(conn, page))
   end
+
+  def js_script_tag do
+    ~s(<script src="/js/app.js"></script>)
+  end
+  def css_link_tag do
+    ~s(<link rel="stylesheet" type="text/css" href="/css/app.css" media="screen,projection" />)
+  end
 end
